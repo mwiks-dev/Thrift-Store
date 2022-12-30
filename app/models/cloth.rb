@@ -1,3 +1,2 @@
-class Cloth < ActiveRecord::Base
-    validates :cloth_type, presence: true
+class Cloth < ApplicationRecord
 end
