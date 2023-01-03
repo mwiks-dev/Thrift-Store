@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_12_29_130027) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_31_063057) do
   create_table "cloths", force: :cascade do |t|
     t.string "cloth_type"
     t.string "size"
@@ -19,6 +19,11 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_29_130027) do
     t.string "image_url"
     t.string "material"
     t.string "wash_instructions"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "sessions", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
